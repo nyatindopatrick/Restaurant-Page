@@ -15,10 +15,9 @@ section.className = 'main-div active';
 section.id = '1';
 title.className = 'main-title';
 title.innerHTML = 'FOOD';
-text.innerHTML =
-  'Baked chicken is a very tast dish for the whole family. ' +
-  'The combination of delicate aromas and roasting make the ' +
-  'chicken terribly tasty, juicy, with a crispy crust.';
+text.innerHTML = 'Baked chicken is a very tast dish for the whole family. '
+  + 'The combination of delicate aromas and roasting make the '
+  + 'chicken terribly tasty, juicy, with a crispy crust.';
 
 [title, text].forEach((item) => section.appendChild(item));
 

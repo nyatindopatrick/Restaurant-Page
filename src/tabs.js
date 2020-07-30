@@ -1,4 +1,6 @@
-import { navbar, brand, list, menu, shop, order } from './tools';
+import {
+  navbar, brand, list, menu, shop, order,
+} from './tools';
 
 navbar.className = 'navbar';
 navbar.id = 'nav';
@@ -18,4 +20,4 @@ order.innerHTML = 'CONTACTS';
 
 navbar.appendChild(list);
 
-export { navbar };
+export default navbar;

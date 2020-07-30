@@ -1,11 +1,11 @@
 import '../styles/styles.scss';
 import { newTag } from './tools';
-import { navbar } from './tabs';
+import navbar from './tabs';
 import { aside, section } from './home';
 import mainWrapper from './shop';
 import contact from './contact';
 
-let content = document.getElementById('content');
+const content = document.getElementById('content');
 const div = newTag('div');
 div.className = 'wrapper';
 
@@ -20,8 +20,9 @@ btn.addEventListener('click', (e) => {
   if (!button) return;
   const tabs = e.target.dataset.tab;
   const tabContent = document.getElementById(tabs);
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < tabContents.length; i++) {
-    if (tabContents[i] != tabContents[tabs - 1]) {
+    if (tabContents[i] !== tabContents[tabs - 1]) {
       tabContents[i].classList.remove('active');
     }
     tabContent.classList.add('active');

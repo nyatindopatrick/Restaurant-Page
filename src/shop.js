@@ -1,4 +1,6 @@
-import { newTag, mainWrapper, productWrapper, links } from './tools';
+import {
+  newTag, mainWrapper, productWrapper, links,
+} from './tools';
 
 mainWrapper.className = 'main-div';
 mainWrapper.id = '2';
