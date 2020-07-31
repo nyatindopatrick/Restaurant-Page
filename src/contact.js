@@ -28,7 +28,6 @@ contactHeader.innerHTML = 'CONTACT';
 [name, email, textarea, submit].forEach((element) => form.appendChild(element));
 
 formDiv.appendChild(form);
-contactWrapper.appendChild(contactHeader);
-contactWrapper.appendChild(formDiv);
+[contactHeader, formDiv].forEach(item => contactWrapper.appendChild(item));
 
 export default contactWrapper;
